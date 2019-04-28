@@ -11,9 +11,9 @@ public class SightingTest {
 
     @BeforeEach
     public void setUp() {
-        DB.sql2o = new Sql2o("jdbc:postgresql://localhost:5432/wildlife_tracker", "kosgei", "12345678");
-        sighting = new Sighting("Zone A", "John Doe");
-        sighting2 = new Sighting("Zone B", "Jane Doe");
+        DB.sql2o = new Sql2o("jdbc:postgresql://localhost:5432/wildlife_tracker_test", "kosgei", "12345678");
+        sighting = new Sighting(1, 1);
+        sighting2 = new Sighting(2, 2);
 
 
     }
@@ -32,13 +32,13 @@ public class SightingTest {
     }
 
     @Test
-    public void sighting_getsLocation_Zone_A() {
-        assertEquals("Zone A", sighting.getLocation());
+    public void sighting_getsLocationId_1() {
+        assertEquals(1, sighting.getLocationId());
     }
 
     @Test
-    public void ranger_getsRangerName_John_Doe() {
-        assertEquals("John Doe", sighting.getRangerName());
+    public void ranger_getsRangerId_1() {
+        assertEquals(1, sighting.getRangerId());
     }
 
     @Test

@@ -4,13 +4,15 @@ import org.junit.jupiter.api.Test;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class RangerTest {
-    Ranger ranger, ranger2;;
+    private Ranger ranger, ranger2;;
     @BeforeEach
     public void setUp() {
-        DB.sql2o = new Sql2o("jdbc:postgresql://localhost:5432/wildlife_tracker", "kosgei", "12345678");
+        DB.sql2o = new Sql2o("jdbc:postgresql://localhost:5432/wildlife_tracker_test", "kosgei", "12345678");
         ranger = new Ranger("John" ,"Doe",1);
         ranger2 = new Ranger("Jane" ,"Doe",2);
     }
@@ -64,6 +66,20 @@ public class RangerTest {
         int newRangerId = ranger.getId();
         ranger.delete();
         assertNull(Ranger.find(newRangerId));
+    }
+
+    @Test
+    public void getSightings_retrievesALlSightingsFromDatabase_sightingList() {
+        ranger.save();
+
+        Sighting sighting = new Sighting(1, ranger.getId());
+        sighting.save();
+        Sighting sighting2 = new Sighting(2, ranger.getId());
+        sighting2.save();
+
+        Sighting[] sightings = new Sighting[]{sighting, sighting2};
+
+        assertTrue(ranger.getSightings().containsAll(Arrays.asList(sightings)));
     }
 
 }
