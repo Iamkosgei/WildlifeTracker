@@ -4,14 +4,11 @@
     <list default="true" id="ad42ea53-e85e-4622-a62b-75d0c2f7b79e" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/EndangeredAnimal.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LocationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Ranger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Ranger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sighting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sighting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RangerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RangerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SightingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SightingTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -68,10 +65,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/AnimalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="28" column="48" lean-forward="true" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+            <state relative-caret-position="406">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
                 <element signature="e#672#673#0" expanded="true" />
                 <element signature="e#724#725#0" expanded="true" />
                 <element signature="e#782#783#0" expanded="true" />
@@ -371,7 +369,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556387576625</updated>
-      <workItem from="1556387583270" duration="22822000" />
+      <workItem from="1556387583270" duration="23105000" />
     </task>
     <task id="LOCAL-00001" summary="Added test to test various methods in the Ranger class.">
       <created>1556391429429</created>
@@ -429,7 +427,28 @@
       <option name="project" value="LOCAL" />
       <updated>1556435252207</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added test to test the location class">
+      <created>1556435324406</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1556435324406</updated>
+    </task>
+    <task id="LOCAL-00010" summary="changed the database in which the test were running on. From prod to test database.">
+      <created>1556435478949</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1556435478949</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added fields, constructor to create a endangered animal object and methods to connect to the db">
+      <created>1556435542085</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1556435542085</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -465,7 +484,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22822000" />
+    <option name="totallyTimeSpent" value="23105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1002" extended-state="6" />
@@ -518,7 +537,10 @@
     <MESSAGE value="added test to test various methods in the Animal class." />
     <MESSAGE value="added fields, constructor to create a animal object and methods to connect to the db" />
     <MESSAGE value="added test to test the endangered animal class that inherits from the animal class." />
-    <option name="LAST_COMMIT_MESSAGE" value="added test to test the endangered animal class that inherits from the animal class." />
+    <MESSAGE value="added test to test the location class" />
+    <MESSAGE value="changed the database in which the test were running on. From prod to test database." />
+    <MESSAGE value="added fields, constructor to create a endangered animal object and methods to connect to the db" />
+    <option name="LAST_COMMIT_MESSAGE" value="added fields, constructor to create a endangered animal object and methods to connect to the db" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/WildlifeTracker$RangerTest.ic" NAME="RangerTest Coverage Results" MODIFIED="1556391172159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -685,10 +707,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AnimalTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="28" column="48" lean-forward="true" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+        <state relative-caret-position="406">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
             <element signature="e#672#673#0" expanded="true" />
             <element signature="e#724#725#0" expanded="true" />
             <element signature="e#782#783#0" expanded="true" />
