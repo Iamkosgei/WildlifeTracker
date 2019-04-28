@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad42ea53-e85e-4622-a62b-75d0c2f7b79e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EndangeredAnimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LocationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Ranger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Ranger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sighting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sighting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RangerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RangerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SightingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SightingTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -12,6 +21,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="240" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
@@ -23,18 +35,109 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Animal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+            <state relative-caret-position="825">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#168#169#0" expanded="true" />
+                <element signature="e#200#201#0" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#251#252#0" expanded="true" />
+                <element signature="e#282#283#0" expanded="true" />
+                <element signature="e#309#310#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/AnimalTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="28" column="48" lean-forward="true" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#724#725#0" expanded="true" />
+                <element signature="e#782#783#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/EndangeredAnimal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="29" column="61" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#281#282#0" expanded="true" />
+                <element signature="e#310#311#0" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+                <element signature="e#366#367#0" expanded="true" />
+                <element signature="e#544#545#0" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+              <folding>
+                <element signature="e#849#850#0" expanded="true" />
+                <element signature="e#886#887#0" expanded="true" />
+                <element signature="e#938#939#0" expanded="true" />
+                <element signature="e#996#997#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Ranger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#407#408#0" expanded="true" />
+                <element signature="e#439#440#0" expanded="true" />
+                <element signature="e#603#604#0" expanded="true" />
+                <element signature="e#628#629#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,6 +146,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/LICENSE" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/DB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Ranger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Sighting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Location.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LocationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RangerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SightingTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/EndangeredAnimal.java" />
+        <option value="$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Animal.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AnimalTest.java" />
       </list>
     </option>
   </component>
@@ -53,13 +169,74 @@
     <option name="height" value="1002" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="WildlifeTracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WildlifeTracker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="WildlifeTracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WildlifeTracker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WildlifeTracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WildlifeTracker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="WildlifeTracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WildlifeTracker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WildlifeTracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WildlifeTracker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="WildlifeTracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WildlifeTracker" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -73,6 +250,117 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Gradle.AnimalTest">
+    <configuration name="AnimalTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;AnimalTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="EndangeredAnimalTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;EndangeredAnimalTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="LocationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;LocationTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RangerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;RangerTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'WildlifeTracker.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.AnimalTest" />
+        <item itemvalue="Gradle.EndangeredAnimalTest" />
+        <item itemvalue="Gradle.Tests in 'WildlifeTracker.test'" />
+        <item itemvalue="Gradle.LocationTest" />
+        <item itemvalue="Gradle.RangerTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -83,32 +371,123 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556387576625</updated>
-      <workItem from="1556387583270" duration="259000" />
+      <workItem from="1556387583270" duration="22822000" />
     </task>
+    <task id="LOCAL-00001" summary="Added test to test various methods in the Ranger class.">
+      <created>1556391429429</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556391429429</updated>
+    </task>
+    <task id="LOCAL-00002" summary="this class handles connections to the database.">
+      <created>1556391694456</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556391694456</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added fields, constructor to create a ranger object and methods to connect to the db">
+      <created>1556391804166</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556391804166</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added sighting test to test various methods in the sighting class">
+      <created>1556395956872</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556395956872</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added fields, constructor to create a sighting object and methods to connect to the db">
+      <created>1556395992319</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556395992319</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added test to test various methods in the Animal class.">
+      <created>1556434839465</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1556434839465</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added fields, constructor to create a animal object and methods to connect to the db">
+      <created>1556434868719</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1556434868719</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added test to test the endangered animal class that inherits from the animal class.">
+      <created>1556435252207</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1556435252207</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Tests_in_'WildlifeTracker_test' - 2019.04.28 at 09h 16m 39s.xml">
+      <configuration name="Tests in 'WildlifeTracker.test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="Tests_in_'WildlifeTracker_test' - 2019.04.28 at 09h 19m 18s.xml">
+      <configuration name="Tests in 'WildlifeTracker.test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="Tests_in_'WildlifeTracker_test' - 2019.04.28 at 09h 24m 07s.xml">
+      <configuration name="Tests in 'WildlifeTracker.test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="EndangeredAnimalTest - 2019.04.28 at 09h 24m 37s.xml">
+      <configuration name="EndangeredAnimalTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="EndangeredAnimalTest - 2019.04.28 at 09h 25m 01s.xml">
+      <configuration name="EndangeredAnimalTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="AnimalTest - 2019.04.28 at 09h 40m 13s.xml">
+      <configuration name="AnimalTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="AnimalTest - 2019.04.28 at 09h 41m 42s.xml">
+      <configuration name="AnimalTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="AnimalTest - 2019.04.28 at 09h 44m 56s.xml">
+      <configuration name="AnimalTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="AnimalTest - 2019.04.28 at 09h 45m 26s.xml">
+      <configuration name="AnimalTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="AnimalTest - 2019.04.28 at 09h 59m 10s.xml">
+      <configuration name="AnimalTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259000" />
+    <option name="totallyTimeSpent" value="22822000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1002" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12166489" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12166489" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Build" weight="0.32949308" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.33025405" />
+      <window_info anchor="bottom" id="Build" weight="0.3290993" />
+      <window_info anchor="bottom" id="Terminal" weight="0.33025405" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Version Control" weight="0.3290993" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3290993" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -120,6 +499,8 @@
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32977587" />
+      <window_info anchor="right" id="Bean Validation" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -128,11 +509,190 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added test to test various methods in the Ranger class." />
+    <MESSAGE value="this class handles connections to the database." />
+    <MESSAGE value="added fields, constructor to create a ranger object and methods to connect to the db" />
+    <MESSAGE value="added sighting test to test various methods in the sighting class" />
+    <MESSAGE value="added fields, constructor to create a sighting object and methods to connect to the db" />
+    <MESSAGE value="added test to test various methods in the Animal class." />
+    <MESSAGE value="added fields, constructor to create a animal object and methods to connect to the db" />
+    <MESSAGE value="added test to test the endangered animal class that inherits from the animal class." />
+    <option name="LAST_COMMIT_MESSAGE" value="added test to test the endangered animal class that inherits from the animal class." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/WildlifeTracker$RangerTest.ic" NAME="RangerTest Coverage Results" MODIFIED="1556391172159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="83" selection-start-line="21" selection-start-column="83" selection-end-line="21" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#103#104#0" expanded="true" />
+            <element signature="e#135#136#0" expanded="true" />
+            <element signature="e#161#162#0" expanded="true" />
+            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Sighting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="35" column="49" lean-forward="true" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/LocationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="84" selection-start-line="13" selection-start-column="84" selection-end-line="13" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SightingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RangerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="84" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Ranger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/EndangeredAnimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="29" column="61" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding>
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#996#997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Animal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AnimalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="28" column="48" lean-forward="true" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
