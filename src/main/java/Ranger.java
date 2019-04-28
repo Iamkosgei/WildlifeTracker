@@ -18,25 +18,16 @@ public class Ranger {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 
     public int getBadgeNumber() {
         return badgeNumber;
     }
 
-    public void setBadgeNumber(int badgeNumber) {
-        this.badgeNumber = badgeNumber;
-    }
 
     public int getId() {
         return id;
@@ -81,14 +72,14 @@ public class Ranger {
         }
     }
 
-//    public List<Sighting> getSightings() {
-//        try(Connection con = DB.sql2o.open()) {
-//            String sql = "SELECT * FROM sightings where rangerid=:id";
-//            return con.createQuery(sql)
-//                    .addParameter("id", this.id)
-//                    .executeAndFetch(Sighting.class);
-//        }
-//    }
+    public List<Sighting> getSightings() {
+        try(Connection con = DB.sql2o.open()) {
+            String sql = "SELECT * FROM sightings where rangerid=:id";
+            return con.createQuery(sql)
+                    .addParameter("id", this.id)
+                    .executeAndFetch(Sighting.class);
+        }
+    }
 
     public void delete() {
         try(Connection con = DB.sql2o.open()) {
