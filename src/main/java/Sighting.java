@@ -4,24 +4,30 @@ import java.util.List;
 
 public class Sighting {
     private int id;
-    private int locationId;
-    private int rangerId;
+    private String location;
+    private String ranger;
+    private int animalId;
 
-    public Sighting(int locationId, int rangerId) {
-        this.locationId = locationId;
-        this.rangerId= rangerId;
+    public Sighting(String ranger,String location, int animalId) {
+        this.location = location;
+        this.ranger = ranger;
+        this.animalId = animalId;
     }
 
     public int getId() {
         return id;
     }
 
-    public int getLocationId() {
-        return locationId;
+    public String getLocation() {
+        return location;
     }
 
-    public int getRangerId() {
-        return rangerId;
+    public String getRanger() {
+        return ranger;
+    }
+
+    public int getAnimalId() {
+        return animalId;
     }
 
     public static List<Sighting> all() {
@@ -33,10 +39,11 @@ public class Sighting {
 
     public void save() {
         try(Connection con = DB.sql2o.open())  {
-            String sql = "INSERT INTO sightings (locationid, rangerid) VALUES (:locationId, :rangerId)";
+            String sql = "INSERT INTO sightings (location, ranger , animalid) VALUES (:location, :ranger, :animalId)";
             this.id = (int) con.createQuery(sql, true)
-                    .addParameter("locationId", this.locationId)
-                    .addParameter("rangerId",this.rangerId)
+                    .addParameter("location", this.location)
+                    .addParameter("ranger",this.ranger)
+                    .addParameter("animalId", this.animalId)
                     .executeUpdate()
                     .getKey();
         }

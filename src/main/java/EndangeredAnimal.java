@@ -23,12 +23,13 @@ public class EndangeredAnimal extends Animal {
         return age;
     }
 
-    public int getId() {
-        return id;
+
+    public static String getTYPE() {
+        return TYPE;
     }
 
     public static List<EndangeredAnimal> allEndangeredAnimals() {
-        String sql = "SELECT * FROM animals";
+        String sql = "SELECT * FROM animals where type='Endangered'";
         try(Connection con = DB.sql2o.open()) {
             return con.createQuery(sql).executeAndFetch(EndangeredAnimal.class);
         }
