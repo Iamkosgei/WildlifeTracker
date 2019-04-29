@@ -1,0 +1,38 @@
+<div class="left-content">
+    <div>
+        <h1> The Savannah</h1>
+        <p> “When it comes to conserving wildlife and the environment, It's more important to be outspoken,
+            than unspoken” </p>
+        <i class="fab fa-facebook fa-2x"></i>
+        <i class="fab fa-instagram fa-2x"></i>
+    </div>
+</div>
+
+<div class="right-content">
+    <h1> Rangers </h1>
+    <div class="album py-4 ">
+        <div class="row">
+            #foreach ($ranger in $rangers)
+            <div class="col-md-4" style="color: black;">
+                <div class="card mb-6 box-shadow">
+                    <img class="card-img-top ranger-pic" src="/images/user.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h1> $ranger.getFirstName()  $ranger.getLastName()</h1>
+                        <h2> Badge No: $ranger.getBadgeNumber()</h2>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a class="btn btn-sm btn-outline-success" href="/ranger/$ranger.getId()">View</a>
+                            </div>
+                            <small class="text-muted">Joined 2 days ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            #end
+
+
+        </div>
+        <a class="btn btn-add-ranger btn-success" href="/ranger/new">Add New Ranger</a>
+
+    </div>
+</div>
