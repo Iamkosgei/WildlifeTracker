@@ -72,9 +72,9 @@ public class RangerTest {
     public void getSightings_retrievesALlSightingsFromDatabase_sightingList() {
         ranger.save();
 
-        Sighting sighting = new Sighting(1, ranger.getId());
+        Sighting sighting = new Sighting("Zone A", "Ranger 1",1);
         sighting.save();
-        Sighting sighting2 = new Sighting(2, ranger.getId());
+        Sighting sighting2 = new Sighting("Zone A", "Ranger 1",2);
         sighting2.save();
 
         Sighting[] sightings = new Sighting[]{sighting, sighting2};
