@@ -1,9 +1,13 @@
 plugins {
     id 'java'
 }
+apply plugin: 'application'
 
 group 'xyz.kosgei.WildlifeTracker'
 version '1.0-SNAPSHOT'
+
+applicationName = "WildlifeTracker"
+mainClassName = 'App'
 
 sourceCompatibility = 1.8
 
@@ -28,3 +32,4 @@ test {
         events "passed", "skipped", "failed"
     }
 }
+task stage(dependsOn: ['clean', 'installDist'])
