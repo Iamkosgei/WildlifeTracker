@@ -12,6 +12,10 @@ public class Animal {
         this.name = name;
     }
 
+    public static String getTYPE() {
+        return TYPE;
+    }
+
     public int getId() {
         return id;
     }
@@ -22,9 +26,10 @@ public class Animal {
 
     public void save() {
         try(Connection con = DB.sql2o.open())  {
-            String sql = "INSERT INTO animals (name) VALUES (:name)";
+            String sql = "INSERT INTO animals (name,type) VALUES (:name, :type)";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("name", this.name)
+                    .addParameter("type", TYPE)
                     .executeUpdate()
                     .getKey();
         }
@@ -51,7 +56,7 @@ public class Animal {
     }
 
     public static List<Animal> all() {
-        String sql = "SELECT * FROM animals";
+        String sql = "SELECT * FROM animals where type = 'Not Endangered'";
         try(Connection con = DB.sql2o.open()) {
             return con.createQuery(sql)
                     .throwOnMappingFailure(false)
