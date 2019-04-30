@@ -1,6 +1,5 @@
-# The Salon
-A java spark app for a hair salon. Where the owner is able to add a list of the stylists, and for each stylist, 
-add clients who see that stylist. The stylists work independently, so each client only belongs to a single stylist.
+# Wildlife Tracker
+A java spark app for the Forest Service to conduct an environmental impact study.
 
 ## Technologies and frameworks used
     1. java 11
