@@ -23,6 +23,10 @@ public class EndangeredAnimal extends Animal {
         return age;
     }
 
+    @Override
+    public int getId() {
+       return id;
+    }
 
     public static String getTYPE() {
         return TYPE;
