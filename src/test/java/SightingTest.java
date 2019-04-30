@@ -26,6 +26,13 @@ public class SightingTest {
     }
 
     @Test
+    public void sighting_getsAnimalId_1()
+    {
+        assertEquals(1,sighting.getAnimalId());
+    }
+
+
+    @Test
     public void sighting_instantiatesCorrectly() {
         assertNotNull(sighting);
     }
@@ -53,6 +60,20 @@ public class SightingTest {
         sighting.save();
         Sighting savedSighting = Sighting.all().get(0);
         assertEquals(sighting.getId(), savedSighting.getId());
+    }
+
+    @Test
+    public void finds_sighting_true()
+    {
+        sighting.save();
+        assertEquals(sighting, Sighting.find(sighting.getId()));
+    }
+
+    @Test
+    public void notInstanceOfSighting_false()
+    {
+        Animal animal = new Animal("Lion");
+        assertNotEquals(sighting, animal);
     }
 
 }

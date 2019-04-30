@@ -48,4 +48,18 @@ public class LocationTest {
         Location savedLocation= Location.all().get(0);
         assertEquals(location.getId(), savedLocation.getId());
     }
+
+    @Test
+    public void finds_location_true()
+    {
+        location.save();
+        assertEquals(location, Location.find(location.getId()));
+    }
+
+    @Test
+    public void false_when_not_instance()
+    {
+        Animal animal = new Animal("Lion");
+        assertNotEquals(location,animal);
+    }
 }

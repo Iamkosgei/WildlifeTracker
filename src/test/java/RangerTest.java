@@ -82,4 +82,11 @@ public class RangerTest {
         assertTrue(ranger.getSightings().containsAll(Arrays.asList(sightings)));
     }
 
+    @Test
+    public void equals_return_false_when_not_its_instance_true()
+    {
+        Animal animal = new Animal("Lion");
+        assertNotEquals(ranger, animal);
+    }
+
 }

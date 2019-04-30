@@ -25,6 +25,7 @@ public class AnimalTest {
 
     }
 
+
     @Test
     public void animal_instantiatesCorrectly() {
         assertNotNull(animal);
@@ -48,6 +49,26 @@ public class AnimalTest {
         animal.save();
         Animal savedAnimal = Animal.all().get(0);
         assertEquals(animal.getId(), savedAnimal.getId());
+    }
+
+    @Test
+    public void getsType_Not_Endangered()
+    {
+        assertEquals("Not Endangered", Animal.getTYPE());
+    }
+
+    @Test
+    public void find_returns_animal()
+    {
+        animal.save();
+        assertEquals(animal , Animal.find(animal.getId()));
+    }
+
+    @Test
+    public void return_false_when_not_instance_true()
+    {
+        Location location = new Location("Zone A");
+        assertNotEquals(animal, location);
     }
 
 }
