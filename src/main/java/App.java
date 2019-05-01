@@ -25,7 +25,7 @@ public class App {
 
         get("/", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
-            model.put("rangers",Ranger.all());
+            model.put("rangers", Ranger.all());
             model.put("template", "templates/index.vtl");
             return new VelocityTemplateEngine().render(
                     new ModelAndView(model, layout)
@@ -45,12 +45,17 @@ public class App {
 
             String firstName = req.queryParams("inputFirstName");
             String lastName = req.queryParams("inputLastName");
-            String badgeNumber =req.queryParams("inputBadgeNumber");
+            String badgeNumber = req.queryParams("inputBadgeNumber");
 
-            Ranger ranger = new Ranger(firstName,lastName,Integer.parseInt(badgeNumber));
-            ranger.save();
+            if (!(firstName.trim().isEmpty() || lastName.trim().isEmpty() || badgeNumber.trim().isEmpty())) {
 
+                Ranger ranger = new Ranger(firstName, lastName, Integer.parseInt(badgeNumber));
+                ranger.save();
+            } else {
+                System.out.println("Please fill in all the fields");
+            }
             res.redirect("/");
+
             return new VelocityTemplateEngine().render(
                     new ModelAndView(model, layout)
             );
@@ -59,8 +64,8 @@ public class App {
         get("/ranger/:id", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             Ranger ranger = Ranger.find(Integer.parseInt(req.params(":id")));
-            model.put("ranger",ranger);
-           // model.put("sightings",ranger.AllMySightings());
+            model.put("ranger", ranger);
+            // model.put("sightings",ranger.AllMySightings());
 
             model.put("template", "templates/ranger.vtl");
             return new VelocityTemplateEngine().render(
@@ -71,15 +76,14 @@ public class App {
         get("/ranger/:id/new", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             Ranger ranger = Ranger.find(Integer.parseInt(req.params(":id")));
-            model.put("ranger",ranger);
+            model.put("ranger", ranger);
 
 
+            model.put("animals", Animal.all());
+            model.put("locations", Location.all());
 
-            model.put("animals",Animal.all());
-            model.put("locations",Location.all());
 
-
-            model.put("sightings",Sighting.find(Integer.parseInt(req.params(":id"))));
+            model.put("sightings", Sighting.find(Integer.parseInt(req.params(":id"))));
             model.put("template", "templates/record-sighting.vtl");
             return new VelocityTemplateEngine().render(
                     new ModelAndView(model, layout)
@@ -94,7 +98,7 @@ public class App {
             int animal = Integer.parseInt(req.queryParams("animal"));
             String location = req.queryParams("location");
 
-            Sighting sighting = new Sighting(name,location,animal);
+            Sighting sighting = new Sighting(name, location, animal);
             sighting.save();
 
             res.redirect("/");
@@ -104,13 +108,12 @@ public class App {
         });
 
 
-
         get("/animals", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
 
 
-            model.put("animals",Animal.all());
-            model.put("endangeredAnimals" , EndangeredAnimal.allEndangeredAnimals());
+            model.put("animals", Animal.all());
+            model.put("endangeredAnimals", EndangeredAnimal.allEndangeredAnimals());
 
             model.put("template", "templates/animals.vtl");
             return new VelocityTemplateEngine().render(
@@ -124,16 +127,24 @@ public class App {
             String name = req.queryParams("inputName");
             String health = req.queryParams("healthInput");
             String age = req.queryParams("ageInput");
-           if(req.queryParams("endangeredInput") != null)
-           {
-               EndangeredAnimal endangeredAnimal = new EndangeredAnimal(name,health,age);
-               endangeredAnimal.save();
-           }
-           else
-           {
-               Animal animal = new Animal(name);
-               animal.save();
-           }
+            if (req.queryParams("endangeredInput") != null) {
+                if (!(name.trim().isEmpty() || health.trim().isEmpty() || age.trim().isEmpty())) {
+
+                    EndangeredAnimal endangeredAnimal = new EndangeredAnimal(name, health, age);
+                    endangeredAnimal.save();
+                } else {
+                    System.out.println("Please fill in all the fields");
+                }
+            } else {
+                if (!(name.trim().isEmpty())) {
+                    Animal animal = new Animal(name);
+                    animal.save();
+                } else {
+                    System.out.println("Please fill in all the fields");
+                }
+
+
+            }
             res.redirect("/animals");
 
             return new VelocityTemplateEngine().render(
@@ -142,10 +153,9 @@ public class App {
         });
 
 
-
         get("/sightings", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
-            model.put("sightings",Sighting.all());
+            model.put("sightings", Sighting.all());
 
             model.put("template", "templates/sightings.vtl");
             return new VelocityTemplateEngine().render(
@@ -154,11 +164,10 @@ public class App {
         });
 
 
-
         get("/locations", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
 
-            model.put("locations",Location.all());
+            model.put("locations", Location.all());
 
             model.put("template", "templates/locations.vtl");
             return new VelocityTemplateEngine().render(
@@ -169,8 +178,13 @@ public class App {
         post("/locations", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
 
-            Location location = new Location(req.queryParams("name"));
-            location.save();
+            String locationName = req.queryParams("name");
+
+            if (!(locationName.trim().isEmpty())) {
+
+                Location location = new Location(locationName);
+                location.save();
+            }
             res.redirect("/locations");
             return new VelocityTemplateEngine().render(
                     new ModelAndView(model, layout)
